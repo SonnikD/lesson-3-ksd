@@ -4,50 +4,11 @@
 * */
 
 function getVowelsCount(str) {
+  str = str.split("");
 
+  const glasn = str.filter((buk) => "aeiouy".includes(buk));
+
+  return glasn.length;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-module.exports = getVowelsCount
+module.exports = getVowelsCount;
